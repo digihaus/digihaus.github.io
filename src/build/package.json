@@ -4,6 +4,7 @@
   "description": "GEMUZON Web Site",
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-zetzer": "^2.0.0"
+    "grunt-zetzer": "^2.0.0",
+    "grunt-contrib-watch": "~0.6.1"
   }
 }

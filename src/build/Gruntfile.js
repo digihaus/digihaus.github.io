@@ -15,8 +15,17 @@ module.exports = function (grunt) {
         }
         ]
       }
+    },
+    watch: {
+      all: {
+        files: '../**/*',
+        tasks: ['zetzer']
+      }
     }
   });
+
   grunt.loadNpmTasks('grunt-zetzer');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
   grunt.registerTask('default', 'zetzer');
 };
