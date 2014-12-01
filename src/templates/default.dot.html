@@ -1,8 +1,57 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>{{= it.document.title }}</title>
-  </head>
-  <body class="{{= it.document.body_class }}">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{= it.document.title }} GEMUZON</title>
+</head>
+<body role="document">
+  <header>
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">GEMUZON</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Articles</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Monogatari<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://github.com/gemuzon/monogatari">Source</a></li>
+                <li><a href="#">Docs</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
     {{= it.document }}
-  </body>
+    <hr>
+    <footer style="text-align:center; padding-top:40px">
+      <div class="container">
+        <p class="text-muted">Created and maintened by <a href="chrysthian.html">Chrysthian Akihiro</a> and Marcio Lucca</p>
+        <p class="text-muted">Articles licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
 </html>

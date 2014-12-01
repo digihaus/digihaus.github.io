@@ -3,7 +3,8 @@ module.exports = function (grunt) {
     zetzer: {
       main: {
         options: {
-          templates: '../templates'
+          templates: '../templates',
+          dot_template_settings: { strip: false }
         },
         files: [
         {
