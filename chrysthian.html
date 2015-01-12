@@ -9,7 +9,7 @@
 <body role="document">
   <header>
     <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -29,8 +29,25 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Monogatari<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="http://github.com/gemuzon/monogatari">Source</a></li>
-                <li><a href="#">Docs</a></li>
+                <li role="presentation">
+                  <a href="http://github.com/gemuzon/monogatari">Source</a>
+                </li>
+                <li role="presentation" class="disabled">
+                  <a href="http://github.com/gemuzon/monogatari">Docs</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+
+                  <a href="https://github.com/gemuzon/monogatari/archive/0.0.1.zip">
+                    <span class="glyphicon glyphicon-cloud-download"></span>
+                    monogatari-0.0.1.zip
+                  </a>
+
+                  <a href="https://github.com/gemuzon/monogatari/archive/0.0.1.tar.gz">
+                    <span class="glyphicon glyphicon-cloud-download"></span>
+                    monogatari-0.0.1.tar.gz
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -83,17 +100,20 @@
   </div>
 
   <hr>
+
   <footer style="text-align:center;">
     <div class="container">
       <p class="text-muted">
         GEMUZON - Digital Gaming Development Studies<br>
+      </p>
+      <p class="text-muted">
         Created and maintened by
         <a href="chrysthian.html">Chrysthian Akihiro</a> and
         <a href="marciolucca.html">Marcio Lucca</a>
       </p>
       <!--
       <p class="text-muted">Articles licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
-    -->
+      -->
   </div>
   </footer>
 
