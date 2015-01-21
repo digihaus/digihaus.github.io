@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Lucida Sans';
+  font-family: Lucida, sans-serif;
 }
 
 .reading {
@@ -21,7 +21,7 @@ body {
 }
 
 .reading p.lead {
-  font-family: 'Lucida Sans';
+  font-family: Lucida, sans-serif;
   font-size: 24px;
   color: rgba(0, 0, 0, 0.4);
 }
