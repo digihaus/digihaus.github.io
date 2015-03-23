@@ -7,15 +7,13 @@ module.exports = function (grunt) {
           templates: '../templates',
           dot_template_settings: { strip: false }
         },
-        files: [
-        {
+        files: [{
           expand: true,
           cwd: '../pages/',
           src: '**/*.dot.html',
           dest: '../../',
           ext: '.html'
-        }
-        ]
+        }]
       }
     },
 
@@ -31,8 +29,7 @@ module.exports = function (grunt) {
         options: {
           port: 9000,
           livereload: true,
-          base: "../../",
-          keepalive: true
+          base: "../../"
         }
       }
     }
@@ -43,5 +40,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['zetzer', 'connect']);
+  grunt.registerTask('default', ['connect', 'watch']);
 };
