@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
   grunt.initConfig({
+
     zetzer: {
       main: {
         options: {
@@ -17,16 +18,30 @@ module.exports = function (grunt) {
         ]
       }
     },
+
     watch: {
       all: {
         files: '../**/*',
         tasks: ['zetzer']
       }
+    },
+
+    connect: {
+      server: {
+        options: {
+          port: 9000,
+          livereload: true,
+          base: "../../",
+          keepalive: true
+        }
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-zetzer');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', 'zetzer');
+  grunt.registerTask('default', ['zetzer', 'connect']);
 };
