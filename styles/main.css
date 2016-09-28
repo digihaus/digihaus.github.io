@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+body {
+    margin: 0;
+}
+
 #main {
     position: absolute;
     top: 0;
